@@ -1,0 +1,4 @@
+.vscode/
+*.fig
+node_modules/
+.env

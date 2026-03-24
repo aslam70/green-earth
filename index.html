@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Earth</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="shadow-sm bg-[#15803D]">
+      <div class="navbar w-11/12 mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a>About</a></li>
+              <li><a>Gallery</a></li>
+              <li><a>Plant a Tree</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-white text-xl">Green Earth</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-white">About</a></li>
+            <li><a class="text-white">Gallery</a></li>
+            <li><a class="text-white">Plant a Tree</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-warning rounded-3xl">Plant a Tree</a>
+        </div>
+      </div>
+    </div>
+    <!-- banner section -->
+    <section
+      class="bg-[#CFF0DC] flex flex-col md:flex-row items-center justify-between py-12"
+    >
+      <div>
+        <img src="./assets/hero-leaf1.png" alt="" />
+      </div>
+      <div class="hero">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-3xl font-bold">Plant a Tree, Grow a Future</h1>
+            <p class="py-4">
+              Join our mission to plant 1 million trees and make the Earth
+              greener for future generations.
+            </p>
+            <button class="btn btn-warning rounded-3xl">Get Involved</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/hero-leaf2.png" alt="" />
+      </div>
+    </section>
+    <section class="bg-[#15803D20] pt-20">
+      <h2 class="text-center font-bold text-2xl pb-8">Choose Your Trees</h2>
+      <div
+        class="flex flex-col md:grid md:grid-cols-5 w-11/12 mx-auto  py-4 gap-4 "
+      >
+        <div id="plants-categories" class="col-span-1">
+          <h2 class="bg-blue-600 text-white mb-3 p-2 rounded-md">All Trees</h2>
+          <ul id="plants-menu" class="flex flex-row flex-wrap gap-2 md:flex-col"></ul>
+        </div>
+        <div
+          class="col-span-3 grid grid-cols-1 lg:grid-cols-3 gap-6"
+          id="cart-container"
+        ></div>
+        <div class="bg-white rounded-xl">
+          <h2 class="text-xl font-bold py-4 px-6">Your Cart</h2>
+          <div class="p-3 rounded-sm flex-col space-y-4" id="bookmarkContainer">
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
