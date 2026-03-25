@@ -3,7 +3,7 @@
 Green Earth is a modern, responsive web application designed to encourage people to plant trees and contribute to a greener planet. Users can browse different categories of trees, view details, and manage a dynamic shopping cart.
 
 🌐 **Live Demo:**
-- [https://green-earthh.netlify.app/]
+- [https://green-earth-one.vercel.app/]
 
 ## Features
 - Dynamic Category Loading: Trees are categorized (Fruit, Indoor, Outdoor, etc.) and fetched dynamically from an API.
@@ -63,7 +63,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 **Md. Aslam Hosen**
 Frontend Developer — Dhaka, Bangladesh
 
-- Portfolio: [aslamdev.netlify.app](https://aslam-dev.netlify.app)
+- Portfolio: [aslam-dev-ecru.vercel.app](https://aslam-dev-ecru.vercel.app/)
 - LinkedIn: [linkedin.com/in/md-aslam-hosen-8594702b8](https://linkedin.com/in/md-aslam-hosen-8594702b8)
 - GitHub: [github.com/aslam70](https://github.com/aslam70)
 
